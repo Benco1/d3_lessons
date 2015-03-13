@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Transitions</title>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+
+  <script>
+
+    var canvas = d3.select("body")
+          .append("svg")
+          .attr("width", 500)
+          .attr("height", 500);
+
+    var circle = canvas.append("circle")
+            .attr("cx", 50)
+            .attr("cy", 50)
+            .attr("r", 25);
+
+    // Basic 'transitions' (translations) on a circle
+    circle.transition()
+          .attr("opacity", 0)
+          .transition()
+          .attr("opacity", 1)
+          .duration(3000)
+          .delay(2000)
+          .attr("cx", 150)
+          .transition()
+          .attr("cy", 200)
+          .transition()
+          .attr("cx", 50)
+          .transition()
+          .attr("cy", 100)
+          .each("end", function () { d3.select(this).attr("fill", "red"); });
+
+  </script>
+</body>
+
+</html>
