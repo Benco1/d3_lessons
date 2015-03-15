@@ -1,0 +1,14 @@
+{
+  "name": "Foo",
+  "value": 100,
+  "children": [
+  { "name": "Bar", "value": 100 },
+  { "name": "Bar", "value": 125 },
+  { "name": "Bar", "value": 50 },
+  { "name": "Bar", "value": 23 },
+  { "name": "Bar", "value": 34 },
+  { "name": "Bar", "value": 133 },
+  { "name": "Bar", "value": 53 },
+  { "name": "Bar", "value": 86 }
+  ]
+}
